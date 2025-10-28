@@ -1,1 +1,10 @@
 @import 'tailwindcss';
+
+@theme {
+    --action-main-color: #415BE7;
+    --border-color: #DBDDE3;
+    --additional-color: #F4F5FE;
+    --color-star: #E23710;
+    --placeholder-color: #818EA1;
+    --count-color: #697387;
+}
