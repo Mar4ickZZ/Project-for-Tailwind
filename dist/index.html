@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+<script defer src="main.js"></script></head>
+<body>
+
+<header class="flex flex-col md:flex-row md:items-center justify-start md:justify-between px-5 sm:px-20 py-5 font-[Helvetica-Regular] ">
+    <div>
+        <img src="./images/logo.png" alt="Logo">
+    </div>
+
+    <div class="flex items-center mt-3">
+        <div class="flex items-center">
+            <div class="group flex items-center justify-center size-6 mr-2 bg-(--additional-color) rounded-full border border-(--border-color)
+             hover:cursor-pointer hover:border-0 hover:bg-(--action-main-color)">
+                <svg class="block group-hover:hidden"
+                        width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.6803 0.745148L3.84986 7.57559L0.745117 4.47084" stroke="#415BE7" stroke-width="1.49028"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="hidden font-[Helvetica-Bold] font-bold text-white text-sm group-hover:block">1</span>
+            </div>
+            Cart
+        </div>
+
+        <div class="w-2 md:w-12 mx-2 border border-(--border-color)"></div>
+
+        <div class="flex items-center">
+            <div class="group flex items-center justify-center size-6 mr-2 bg-(--additional-color) rounded-full border border-(--border-color)
+             hover:cursor-pointer hover:border-0 hover:bg-(--action-main-color)">
+                <svg class="block group-hover:hidden"
+                     width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.6803 0.745148L3.84986 7.57559L0.745117 4.47084" stroke="#415BE7" stroke-width="1.49028"
+                          stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="hidden font-[Helvetica-Bold] font-bold text-sm text-white group-hover:block">2</span>
+            </div>
+            Review
+        </div>
+
+        <div class="w-2 md:w-12 mx-2 border border-(--border-color)"></div>
+
+        <div class="flex items-center">
+            <div class="flex items-center justify-center size-6 mr-2 font-[Helvetica-Bold] bg-(--action-main-color) rounded-full
+             hover:cursor-pointer">
+                <span class="font-bold text-sm text-white">3</span>
+            </div>
+            Checkout
+        </div>
+    </div>
+</header>
+
+<main class="flex flex-col xl:flex-row justify-between px-5 md:pl-5 md:pr-19 lg:px-20 pt-10 pb-[68px] bg-(--bg-main)">
+    <!-------------  Left  ---------->
+    <div class="font-[Helvetica-Medium]">
+        <div class="mb-7 text-[32px] font-[Helvetica-Bold]">Checkout</div>
+        <div class="mb-7 text-sm font-[Helvetica-Bold]">Shipping Information</div>
+
+        <div>
+            <label class="flex flex-col">
+                <span class="mb-2 font-medium after:ml-1 after:text-(--color-star) after:content-['*'] ...">Full Name</span>
+                <input class="w-[335px] md:w-[672px] p-4 border border-(--border-color) rounded-lg outline-none font-[Helvetica-Regular] placeholder:text-(--placeholder-color)"
+                       placeholder="Enter full name" type="text">
+            </label>
+        </div>
+
+        <div class="mt-6">
+            <label class="flex flex-col">
+                <span class="mb-2 text-sm font-medium after:ml-1 after:text-(--color-star) after:content-['*'] ...">Email address</span>
+                <input class="w-[335px] md:w-[672px] p-3 border border-(--border-color) rounded-lg outline-none font-[Helvetica-Regular] placeholder:text-(--placeholder-color)"
+                       placeholder="Enter email address" type="text">
+            </label>
+        </div>
+
+        <div class="mt-6">
+            <label class="flex flex-col">
+            <span class="mb-2 text-sm font-medium after:ml-1 after:text-(--color-star) after:content-['*'] ...">Phone Number</span>
+            <input class="w-[335px] md:w-[672px] p-3 border border-(--border-color) rounded-lg outline-none font-[Helvetica-Regular] placeholder:text-(--placeholder-color)"
+                   placeholder="Enter phone number" type="text">
+        </label>
+        </div>
+
+        <div class="mt-6">
+            <label class="flex flex-col">
+                <span class="mb-2 text-sm font-medium after:ml-1 after:text-(--color-star) after:content-['*'] ...">Country</span>
+                <input class="w-[335px] md:w-[672px] p-3 border border-(--border-color) rounded-lg outline-none font-[Helvetica-Regular] placeholder:text-(--placeholder-color)"
+                       placeholder="Enter your country" type="text">
+            </label>
+        </div>
+
+        <div class="flex flex-col md:flex-row mt-6 gap-5">
+
+            <label class="flex flex-col">
+                <span class="text-sm font-medium">City</span>
+                <input class="w-[335px] md:w-[210px] mt-2 p-4 border border-(--border-color) rounded-lg outline-none placeholder:text-(--placeholder-color)"
+                       placeholder="Enter city" type="text">
+            </label>
+
+            <label class="flex flex-col">
+                <span class="text-sm font-medium after:ml-0.5">State</span>
+                <input class="w-[335px] md:w-[210px] mt-2 p-4 border border-(--border-color) rounded-lg outline-none placeholder:text-(--placeholder-color)"
+                       placeholder="Enter state" type="text">
+            </label>
+
+            <label class="flex flex-col">
+                <span class="text-sm font-medium after:ml-0.5">ZIP Code</span>
+                <input class="w-[335px] md:w-[210px] mt-2 p-4 border border-(--border-color) rounded-lg outline-none placeholder:text-(--placeholder-color)"
+                       placeholder="Enter ZIP code" type="text">
+            </label>
+        </div>
+
+    </div>
+
+    <!-------------  Right  ---------->
+    <div class="w-[335px] md:w-[528px] pt-17 font-[Helvetica-Bold]">
+        <div class="text-xl mb-6">Review your cart</div>
+
+        <div class="flex flex-col">
+            <div class="flex mb-6">
+                <img class="mr-4 border border-(--border-color) rounded-lg" src="images/sofa.png" alt="Sofa">
+                <div>
+                    <div class="font-[Helvetica-Medium]">DuoComfort Sofa Premium</div>
+                    <div class="font-[Helvetica-Regular] mt-2 text-(--count-color) text-sm">1x</div>
+                    <div class="mt-[35px] font-[Helvetica-Bold]">$20.00</div>
+                </div>
+            </div>
+
+            <div class="flex">
+                <img class="mr-4 border border-(--border-color) rounded-lg" src="images/desk.png" alt="Iron Desk">
+                <div>
+                    <div class="font-[Helvetica-Medium]">Iron Desk</div>
+                    <div class="font-[Helvetica-Regular] mt-2 text-(--count-color) text-sm">1x</div>
+                    <div class="mt-[35px] font-[Helvetica-Bold]">$25.00</div>
+                </div>
+            </div>
+
+
+            <div class="flex flex-col gap-4 mt-10 text-(--placeholder-color) text-sm">
+                <div class="flex justify-between items-center">
+                    <div class="font-[Helvetica-Regular]">Subtotal</div>
+                    <div class="text-black">$45.00</div>
+                </div>
+
+                <div class="flex justify-between items-center">
+                    <div class="font-[Helvetica-Regular]">Shipping</div>
+                    <div class="text-black">$45.00</div>
+                </div>
+
+                <div class="flex justify-between items-center">
+                    <div class="font-[Helvetica-Regular]">Discount</div>
+                    <div class="text-black">$45.00</div>
+                </div>
+
+                <div class="flex justify-between items-center text-black text-base">
+                    <div>Total</div>
+                    <div >$40.00</div>
+                </div>
+            </div>
+
+            <button class="w-[335px] md:w-[528px] mt-10 py-3 bg-(--action-main-color) text-white rounded-lg hover:bg-(--button-hover-color)">
+                Pay Now
+            </button>
+
+        </div>
+
+    </div>
+</main>
+
+<footer class="my-9 mx-[67.5px] lg:text-center font-[Helvetica-Medium] text-xs text-neutral-700">
+    © 2025 Furniture, Inc. All Rights Reserved
+</footer>
+
+</body>
+</html>
