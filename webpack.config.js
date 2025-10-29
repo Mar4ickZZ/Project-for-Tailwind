@@ -6,11 +6,11 @@ module.exports = {
     entry: './src/index.js',
     plugins: [
         new HtmlWebpackPlugin({
-        'template': './src/index.html',
-    }),
+            'template': './src/index.html',
+        }),
         new CopyPlugin({
             patterns: [
-                { from: "src/images", to: "images" },
+                {from: "src/images", to: "images"},
             ],
         }),
     ],
@@ -37,6 +37,13 @@ module.exports = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[name][ext][query]',
+                },
             },
         ],
     },

@@ -1,5 +1,20 @@
 @import 'tailwindcss';
 
+@font-face {
+    font-family: Helvetica-Bold;
+    src: url(./fonts/HelveticaNeue-Bold.woff2);
+}
+
+@font-face {
+    font-family: Helvetica-Medium;
+    src: url(./fonts/HelveticaNeue-Medium.woff2);
+}
+
+@font-face {
+    font-family: Helvetica-Regular;
+    src: url(./fonts/HelveticaNeue-Roman.woff2);
+}
+
 @theme {
     --action-main-color: #415BE7;
     --border-color: #DBDDE3;
@@ -7,4 +22,6 @@
     --color-star: #E23710;
     --placeholder-color: #818EA1;
     --count-color: #697387;
+    --bg-main: #F9F9FB;
+    --button-hover-color: #2F45B9;
 }
